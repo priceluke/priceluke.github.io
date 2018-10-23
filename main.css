@@ -1,0 +1,42 @@
+.hiddenlink {
+	color:lightgrey;
+	text-decoration:none;
+}
+
+.hiddenlink:hover{
+	color:grey;
+}
+
+
+.plainlink {
+	color:black;
+	text-decoration:none;
+}
+
+body {
+	margin:7%;
+	border-width:5px;
+	border-style:solid;
+	font-family:"courier new";
+	background-repeat:no-repeat;
+	background-image:url("wallpaper.jpg");
+	background-position:left bottom;
+	background-attachment:fixed;
+	background-size:auto 40%;
+}
+
+#padder {
+	margin:5%;
+}
+#whitebar {
+	background-color:white;
+	height:105%;
+}
+
+h1 {
+	text-align:center;
+}
+
+.third {
+	width:33%;
+}
