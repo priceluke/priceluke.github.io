@@ -1,3 +1,25 @@
+#myname {
+	text-decoration:underline;
+	font-weight: bold;
+}
+
+#pageHeadder {
+	list-style: none;
+	text-align: center;
+margin-top:0;
+padding-top:0;
+	font-size: 36px;
+	top:0px;
+	left:center;
+}
+
+#academicStatus {
+font-size: 14px;
+}
+#uniName {
+font-size: 12px;
+}
+
 .hiddenlink {
 	color:lightgrey;
 	text-decoration:none;
@@ -13,30 +35,35 @@
 	text-decoration:none;
 }
 
-body {
-	margin:7%;
-	border-width:5px;
-	border-style:solid;
-	font-family:"courier new";
-	background-repeat:no-repeat;
-	background-image:url("wallpaper.jpg");
-	background-position:left bottom;
-	background-attachment:fixed;
-	background-size:auto 40%;
-}
-
-#padder {
+.padder5 {
 	margin:5%;
-}
-#whitebar {
-	background-color:white;
-	height:105%;
 }
 
 h1 {
 	text-align:center;
 }
 
+
 .third {
 	width:33%;
+}
+
+#distinctBody {
+	margin-left:7%;
+	margin-right:7%;
+	margin-bottom:7%;
+	border-width:5px;
+	background-color:white;
+	height:105%;
+	border-style:solid;
+
+
+}
+body {
+	background-repeat:no-repeat;
+	background-image:url("wallpaper.jpg");
+	background-position:left bottom;
+	background-attachment:fixed;
+		font-family:"courier new";
+	background-size:auto 40%;
 }
