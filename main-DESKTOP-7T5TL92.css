@@ -8,9 +8,6 @@
 	margin-top: -30px;
 }
 #fadeName{
-	/*margin-top: 0.5%;/*/
-	top:0.2%;
-	left:0px;
 	z-index: 2;
 	font-family: Niagara, sans-serif;
 	font-style: normal;
@@ -18,12 +15,9 @@
 	font-size: 120px;
 	font-weight: 500;
 	position: absolute;
-	width: 100%;
+	width: 99%;
 	text-align: center;
-	animation-name: upname;
-	animation-timing-function: linear;
-	animation-duration: 3s;
-	animation-direction:reverse;
+	-webkit-animation: upname 6s reverse; /* Safari 4.0 - 8.0 */
 
 }
 .bolder {
@@ -40,7 +34,7 @@ a {
 #pageHeadder {
   list-style: none;
   text-align: center;
-  margin-top: 1%;
+  margin-top: 2%;
   padding-top: 0;
   font-size: 36px;
   top: 0px;
@@ -114,31 +108,16 @@ body {
 }
 
 #upanimation {
--webkit-animation: upmove 4s 1s forwards; /* Safari 4.0 - 8.0 */
-}
-#upintrotext {
-	z-index: 2;
-	font-family: Niagara, sans-serif;
-	font-style: normal;
-	letter-spacing: 4px;
-	font-size: 20px;
-	font-weight: 500;
-	position: absolute;
-	width: 99%;
-	top:50%;
-	text-align: center;
-	-webkit-animation: introfade 2s 1s forwards; /* Safari 4.0 - 8.0 */
+-webkit-animation: upmove 6s 2s forwards; /* Safari 4.0 - 8.0 */
 }
 
-@keyframes introfade {
-	0%   {}
-	100% {opacity: 0;display:none;}
-}
+
+
 @keyframes upmove {
 	0%   {}
 	100% {opacity: 0;display:none;z-index: -1;}
 }
 @keyframes upname {
-	0%   {top:0px;}
-	100% {top:35%;}
+	0%  {}
+	100% {top:50%;}
 }

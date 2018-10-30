@@ -5,14 +5,16 @@
 	<title>Luke Price</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="main.css" type="text/css">
+	<script src="interactive.js"> </script>
 </head>
-
-
+<div id="fadeName">&nbsp;luke.</div>
+<div id="upintrotext">welcome</div>
+<img id="upanimation" src="https://www.solidbackgrounds.com/images/950x350/950x350-white-solid-color-background.jpg" width="99%" height="101%" style="z-index:1;position:absolute;" />
 <body>
 	<ul id="pageHeadder">
-		<li id="myname">
-			luke.</li>
-		<li id="academicStatus" class="hiddenlink" onmouseover="this.innerHTML='lukepricebusiness@gmail.com';" onmouseout="this.innerHTML='BSc Computer Science';">
+		<li id="myname"><br>
+		</li>
+		<li id="academicStatus" class="hiddenlink" onmouseover="contentChange('lukepricebusiness@gmail.com', 'academicStatus');" onmouseout="contentChange('BSc Computer Science', 'academicStatus');">
 			BSc Computer Science</li>
 		<li id="uniName" class="hiddenlink">
 			University of Surrey</li>
@@ -73,26 +75,26 @@
 									<td class="third">
 										<span class="bolder">Havant College (2016-2018)</span><br>A-Level
 										<ul>
-											<li>Maths             A</li>
-											<li>Further Maths     B</li>
-											<li>Computer Science  B</li>
-											<li>Physics           B</li>
-											<li>EPQ  							B</li>
+											<li>Maths A</li>
+											<li>Further Maths B</li>
+											<li>Computer Science B</li>
+											<li>Physics B</li>
+											<li>EPQ B</li>
 										</ul>
 									</td>
 									<td class="third">
 										<span class="bolder">Horndean Technology College (2011-2016)</span><br>GCSE
 										<ul>
-											<li>Maths             A</li>
-											<li>Further Maths     A</li>
-											<li>Computer Science  A*</li>
-											<li>Physics           A*</li>
-											<li>Chemistry         A</li>
-											<li>Biology           A</li>
-											<li>English           A</li>
-											<li>ICT               A*</li>
-											<li>Business Studies  B</li>
-											<li>PE                A</li>
+											<li>Maths A</li>
+											<li>Further Maths A</li>
+											<li>Computer Science A*</li>
+											<li>Physics A*</li>
+											<li>Chemistry A</li>
+											<li>Biology A</li>
+											<li>English A</li>
+											<li>ICT A*</li>
+											<li>Business Studies B</li>
+											<li>PE A</li>
 										</ul>
 									</td>
 								</tr>
@@ -140,18 +142,18 @@
 							<table width="100%" style="">
 								<tr>
 									<td width="50%">
-										<p><span class="bolder">Home[Made] Automation</span><br><SPAN onmouseover="this.innerHTML='A web controlled light made using a Raspberry Pi, a Web Server/Interface and a prediction algorithm.';" onmouseout="this.innerHTML='2018';" >2018</span></p>
+										<p><span class="bolder">Home[Made] Automation</span><br><SPAN id="HMA" onmouseover="contentChange('A web controlled light made using a Raspberry Pi, a Web Server/Interface and a prediction algorithm.', 'HMA');" onmouseout="contentChange('2018', 'HMA');">2018</span></p>
 									</td>
 									<td width="50%">
-										<p><span class="bolder">University Personal Statment</span><br><SPAN onmouseover="this.innerHTML='A short description on why I felt I was worthy of an offer at the Universities.';" onmouseout="this.innerHTML='2017';" >2017<span></p>
+										<p><span class="bolder">University Personal Statment</span><br><SPAN id="UPS" onmouseover="contentChange('A short description on why I felt I was worthy of an offer at the Universities.', 'UPS');" onmouseout="contentChange('2017', 'UPS');">2017<span></p>
 									<td>
 								</tr>
 								<tr style="text-align:center;">
 									<td width="50%">
-										<p><span class="bolder">CV</span><br><SPAN onmouseover="this.innerHTML='A copy of my CV, avalible for download.';" onmouseout="this.innerHTML='2018';" >2018</span></p>
+										<p><span class="bolder">CV</span><br><SPAN id="CV" onmouseover="contentChange('A copy of my CV, avalible for download.', 'CV');" onmouseout="contentChange('2018', 'CV');">2018</span></p>
 									</td>
 									<td width="50%">
-										<p><span class="bolder">Program Library</span><br><SPAN onmouseover="this.innerHTML='Various Projects in various languages all made by me across the years.';" onmouseout="this.innerHTML='2018';" >2018</span></p>
+										<p><span class="bolder">Program Library</span><br><SPAN id="PL" onmouseover="contentChange('Various Projects in various languages all made by me across the years.', 'PL');" onmouseout="contentChange('2018', 'PL');">2018</span></p>
 									<td>
 								</tr>
 							</table>
