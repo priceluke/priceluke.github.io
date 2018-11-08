@@ -114,7 +114,7 @@ h1 {
 
 body {
   background-repeat: no-repeat;
-  background-image: url("wallpaper.jpg");
+  background-image: url("background.jpg");
   background-position: left bottom;
   background-attachment: fixed;
   font-family: "courier new";
