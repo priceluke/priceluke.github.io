@@ -1,0 +1,11 @@
+
+-Locate the import_template.xlsx in the current working directory
+
+-Fill the columns in as required
+
+-Navigate, using the home menu, to the import from excel form
+	*Settings/Records/...
+
+-Click the 'Select Workbook' button and proceed to import the document contents
+
+*if there are any intermediate relationships that dont match up then they will not be added and will have to be done manually using the record editor*

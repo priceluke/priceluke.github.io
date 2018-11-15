@@ -1,0 +1,6 @@
+To Remove A Product From The Job:
+
+
+-Select The Product From The List Box
+
+-Press 'Remove From Job'

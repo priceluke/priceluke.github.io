@@ -1,0 +1,10 @@
+E:\Coursework\Program\update_client\EMS-UpdateClient\EMS-UpdateClient\bin\Debug\EMS-UpdateClient.exe.config
+E:\Coursework\Program\update_client\EMS-UpdateClient\EMS-UpdateClient\bin\Debug\EMS-UpdateClient.exe
+E:\Coursework\Program\update_client\EMS-UpdateClient\EMS-UpdateClient\bin\Debug\EMS-UpdateClient.pdb
+E:\Coursework\Program\update_client\EMS-UpdateClient\EMS-UpdateClient\bin\Debug\EMS-UpdateClient.xml
+E:\Coursework\Program\update_client\EMS-UpdateClient\EMS-UpdateClient\obj\Debug\EMS_UpdateClient.Resources.resources
+E:\Coursework\Program\update_client\EMS-UpdateClient\EMS-UpdateClient\obj\Debug\EMS-UpdateClient.vbproj.GenerateResource.Cache
+E:\Coursework\Program\update_client\EMS-UpdateClient\EMS-UpdateClient\obj\Debug\EMS-UpdateClient.exe
+E:\Coursework\Program\update_client\EMS-UpdateClient\EMS-UpdateClient\obj\Debug\EMS-UpdateClient.xml
+E:\Coursework\Program\update_client\EMS-UpdateClient\EMS-UpdateClient\obj\Debug\EMS-UpdateClient.pdb
+E:\Coursework\Program\update_client\EMS-UpdateClient\EMS-UpdateClient\obj\Debug\EMS-UpdateClient.vbprojResolveAssemblyReference.cache

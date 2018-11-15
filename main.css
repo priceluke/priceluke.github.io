@@ -1,46 +1,49 @@
 #myname {
-	font-family: Niagara, sans-serif;
+  font-family: Niagara, sans-serif;
   font-style: normal;
-	letter-spacing: 4px;
-	font-size: 120px;
-	font-weight: 500;
-	opacity: 0.4;
-	margin-top: -30px;
+  letter-spacing: 4px;
+  font-size: 120px;
+  font-weight: 500;
+  opacity: 0.4;
+  margin-top: -30px;
 }
 
-#fadeName{
-	/*margin-top: 0.5%;/*/
-	top:0.2%;
-	left:0px;
-	z-index: 2;
-	font-family: Niagara, sans-serif;
-	font-style: normal;
-	letter-spacing: 4px;
-	font-size: 120px;
-	font-weight: 500;
-	position: absolute;
-	width: 100%;
-	text-align: center;
-	animation-name: upname;
-	animation-timing-function: linear;
-	animation-duration: 2s;
-	animation-direction:reverse;
+#fadeName {
+  /*margin-top: 0.5%;/*/
+  top: 0.2%;
+  left: 0px;
+  z-index: 2;
+  font-family: Niagara, sans-serif;
+  font-style: normal;
+  letter-spacing: 4px;
+  font-size: 120px;
+  font-weight: 500;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  animation-name: upname;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-direction: reverse;
+}
 
+a {
+  color: black;
+  text-decoration: none;
 }
-a{
-	color: black;
-	text-decoration:none;
-}
+
 .bolder {
-	font-weight: bold;
-	font-size: 16px;
+  font-weight: bold;
+  font-size: 16px;
 }
+
 .headingStyle {
   font-size: 22px;
   border-bottom-style: solid;
 }
-a {
-}
+
+a {}
+
 #pageHeadder {
   list-style: none;
   text-align: center;
@@ -61,17 +64,16 @@ a {
 
 .hiddenlink {
   color: lightgrey;
-	font-size: 23px;
-
+  font-size: 23px;
   text-decoration: none;
 }
 
 .hiddenlink:hover {
   color: #001f3f;
 }
-.hiddenlink a{
 
-}
+.hiddenlink a {}
+
 .plainlink {
   color: black;
   text-decoration: none;
@@ -113,7 +115,7 @@ h1 {
 }
 
 body {
-/*  background-repeat: no-repeat;
+  /*  background-repeat: no-repeat;
   background-image: url("background.jpg");
   background-position: ;
   background-attachment: fixed;
@@ -121,37 +123,56 @@ body {
 	   width:100%;
 	   background-image:url(background.jpg);your background image
 	   background-repeat:no-repeat;/*we want to have one single image not a repeated one
-	   background-size:cover;/*this sets the image to fullscreen covering the whole screen*/ 
+	   background-size:cover;/*this sets the image to fullscreen covering the whole screen*/
   font-family: "courier new";
   background-size: auto 40%;
 }
 
 #upanimation {
--webkit-animation: upmove 4s 1s forwards; /* Safari 4.0 - 8.0 */
+  -webkit-animation: upmove 4s 1s forwards;
+  /* Safari 4.0 - 8.0 */
 }
+
 #upintrotext {
-	z-index: 2;
-	font-family: Niagara, sans-serif;
-	font-style: normal;
-	letter-spacing: 4px;
-	font-size: 20px;
-	font-weight: 500;
-	position: absolute;
-	width: 99%;
-	top:50%;
-	text-align: center;
-	-webkit-animation: introfade 2s 1s forwards; /* Safari 4.0 - 8.0 */
+  z-index: 2;
+  font-family: Niagara, sans-serif;
+  font-style: normal;
+  letter-spacing: 4px;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  width: 99%;
+  top: 50%;
+  text-align: center;
+  -webkit-animation: introfade 2s 1s forwards;
+  /* Safari 4.0 - 8.0 */
 }
 
 @keyframes introfade {
-	0%   {}
-	100% {opacity: 0;display:none;}
+  0% {}
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
+
 @keyframes upmove {
-	0%   {}
-	100% {opacity: 0;display:none;z-index: -1;}
+  0% {}
+
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
 }
+
 @keyframes upname {
-	0%   {top:0px;}
-	100% {top:30%;}
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: 30%;
+  }
 }

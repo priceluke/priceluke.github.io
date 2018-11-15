@@ -1,0 +1,10 @@
+To Create A Manufacturing Report:
+
+
+-Add Your Required Products To The Job
+
+-Press 'Confirm 
+
+-Select File Type And Alter Settings If Required
+
+-Press 'Print'

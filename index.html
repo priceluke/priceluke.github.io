@@ -8,13 +8,20 @@
 	<script src="interactive.js"> </script>
 	<script src="jquery-3.3.1.min.js"></script>
 	<script src="backstretch.js"> </script>
+	<script>
+		window.onbeforeunload = function() {
+			window.scrollTo(0, 0);
+		}
+	</script>
 </head>
 <div id="fadeName">&nbsp;luke.</div>
 <div id="upintrotext">welcome</div>
 <img id="upanimation" src="https://www.solidbackgrounds.com/images/950x350/950x350-white-solid-color-background.jpg" width="99%" height="120%" style="z-index:1;position:absolute;" />
+
 <body>
 	<script>
-	$.backstretch("background.jpg");</script>
+		$.backstretch("background.jpg");
+	</script>
 	<ul id="pageHeadder">
 		<li id="myname"><br>
 		</li>
@@ -69,36 +76,39 @@
 									<td class="third">
 										<span class="bolder">University of Surrey (2018-)</span><br>Degree & Placement
 										<ul>
-											<li>Firt Year Percentage: TBC</li>
-											<li>Second Year Percentage: TBC</li>
-											<li>Placement Year Percentage: TBC</li>
-											<li>Final Year Percentage: TBC</li>
-											<li>Overall Percentage: TBC</li>
+											<li>Firt Year Percentage:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TBC</span></li>
+											<li>Second Year Percentage:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TBC</li>
+											<li>Placement Year Percentage:&nbsp;&nbsp;TBC</li>
+											<li>Final Year Percentage:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;TBC</li>
+											<li>Overall Percentage:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TBC</li>
 										</ul>
 									</td>
 									<td class="third">
 										<span class="bolder">Havant College (2016-2018)</span><br>A-Level
 										<ul>
-											<li>Maths A</li>
-											<li>Further Maths B</li>
-											<li>Computer Science B</li>
-											<li>Physics B</li>
-											<li>EPQ B</li>
+
+											<li>Maths&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A</li>
+											<li>Further Maths&nbsp;&nbsp;&nbsp;&nbsp;B</li>
+											<li>Physics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B</li>
+											<li>EPQ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B</li>
+											<li>Computer Science&nbsp;B</li>
+											<li style="list-style-type: none;">&nbsp;&nbsp;Programming&nbsp;&nbsp;&nbsp;&nbsp;A</li>
+											<li style="list-style-type: none;">&nbsp;&nbsp;Assessment</li>
 										</ul>
 									</td>
 									<td class="third">
 										<span class="bolder">Horndean Technology College (2011-2016)</span><br>GCSE
 										<ul>
-											<li>Maths A</li>
-											<li>Further Maths A</li>
-											<li>Computer Science A*</li>
-											<li>Physics A*</li>
-											<li>Chemistry A</li>
-											<li>Biology A</li>
-											<li>English A</li>
-											<li>ICT A*</li>
-											<li>Business Studies B</li>
-											<li>PE A</li>
+											<li>Computer Science&nbsp;A*</li>
+											<li>Physics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A*</li>
+											<li>ICT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A*</li>
+											<li>Maths&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A</li>
+											<li>Further Maths&nbsp;&nbsp;&nbsp;&nbsp;A</li>
+											<li>Chemistry&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A</li>
+											<li>Biology&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A</li>
+											<li>English&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A</li>
+											<li>PE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A</li>
+											<li>Business Studies&nbsp;B</li>
 										</ul>
 									</td>
 								</tr>
@@ -146,7 +156,8 @@
 							<table width="100%" style="">
 								<tr>
 									<td width="50%">
-										<p><span class="bolder">Home[Made] Automation</span><br><SPAN id="HMA" onmouseover="contentChange('A web controlled light made using a Raspberry Pi, a Web Server/Interface and a prediction algorithm.', 'HMA');" onmouseout="contentChange('2018', 'HMA');">2018</span></p>
+										<p><span class="bolder"><a href="EPQHomeAutomation/">Home[Made] Automation</a></span><br><SPAN id="HMA" onmouseover="contentChange('A web controlled light made using a Raspberry Pi, a Web Server/Interface and a prediction algorithm.', 'HMA');"
+											  onmouseout="contentChange('2018', 'HMA');">2018</span></p>
 									</td>
 									<td width="50%">
 										<p><span class="bolder"><a href="PS.pdf">University Personal Statment</a></span><br><SPAN id="UPS" onmouseover="contentChange('A short description on why I felt I was worthy of an offer at the Universities.', 'UPS');" onmouseout="contentChange('2017', 'UPS');">2017<span></p>
@@ -154,10 +165,10 @@
 								</tr>
 								<tr style="text-align:center;">
 									<td width="50%">
-										<p><span class="bolder">CV</span><br><SPAN id="CV" onmouseover="contentChange('A copy of my CV, avalible for download.', 'CV');" onmouseout="contentChange('2018', 'CV');">2018</span></p>
+										<p><span class="bolder"><a href="LukePrice-CV.pdf">CV</a></span><br><SPAN id="CV" onmouseover="contentChange('A copy of my CV, avalible for download.', 'CV');" onmouseout="contentChange('2018', 'CV');">2018</span></p>
 									</td>
 									<td width="50%">
-										<p><span class="bolder">Program Library</span><br><SPAN id="PL" onmouseover="contentChange('Various Projects in various languages all made by me across the years.', 'PL');" onmouseout="contentChange('2018', 'PL');">2018</span></p>
+										<p><span class="bolder"><a href="ProgramLibrary/">Program Library</a></span><br><SPAN id="PL" onmouseover="contentChange('Various Projects in various languages all made by me across the years.', 'PL');" onmouseout="contentChange('2018', 'PL');">2018</span></p>
 									<td>
 								</tr>
 							</table>
@@ -175,15 +186,15 @@
 							<table width="100%" style="">
 								<tr>
 									<td width="50%">
-										<p><span class="bolder">HTML</span></p>
+										<p><span class="bolder">Full Stack</span></p>
 									</td>
 									<td width="50%">
-										<p><span class="bolder">CSS</span></p>
+										<p><span class="bolder">Python</span></p>
 									<td>
 								</tr>
 								<tr style="text-align:center;">
 									<td width="50%">
-										<p><span class="bolder">PHP</span></p>
+										<p><span class="bolder">C#</span></p>
 									</td>
 									<td width="50%">
 										<p><span class="bolder">Visual Basic</span></p>

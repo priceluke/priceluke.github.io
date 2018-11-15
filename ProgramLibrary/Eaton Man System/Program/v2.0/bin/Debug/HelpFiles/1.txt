@@ -1,0 +1,12 @@
+To Add A Product To The Job:
+
+
+- Navigate To The Home Screen
+
+-Choose From The Description Combo Box, Selecting The Desired Product
+
+-Select 'Lookup By Id'
+
+-Select A Quantity To Be Produced
+
+-Press 'Add To Job'

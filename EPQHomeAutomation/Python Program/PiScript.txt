@@ -1,0 +1,28 @@
+import urllib2
+import RPi.GPIO as GPIO
+import time
+GPIO.cleanup()
+GPIO.setmode(GPIO.BCM)
+gpioList = [26, 19, 13, 06, 12, 16, 20, 21]
+for i in gpioList:
+    GPIO.setup(i, GPIO.OUT)
+    GPIO.output(i, GPIO.HIGH)
+# Sleep time variables
+sleepTimeShort = 0.2
+sleepTimeLong = 2
+while True:
+        try:
+                response_7 = urllib2.urlopen("http://82.19.253.90/homeautomation/LIGHTS")
+                page_source_7 = response_7.read()
+                response_7.close()
+        except:
+                page_source_7 = "false"
+        if page_source_7 == "false":
+                GPIO.output(12, GPIO.LOW)
+                GPIO.output(13, GPIO.HIGH)
+                print ("LIGHTS: OFF")
+        else:
+                GPIO.output(12, GPIO.HIGH)
+                GPIO.output(13, GPIO.LOW)
+                print ("LIGHTS: ON")
+        time.sleep(1)

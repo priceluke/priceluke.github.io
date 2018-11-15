@@ -1,0 +1,5 @@
+System.IO.FileNotFoundException: Could not find file 'E:\Coursework\Program\v2.1\bin\Debug\CurrentJob.dat'.
+File name: 'E:\Coursework\Program\v2.1\bin\Debug\CurrentJob.dat'
+   at Microsoft.VisualBasic.FileIO.FileSystem.DeleteFileInternal(String file, UIOptionInternal showUI, RecycleOption recycle, UICancelOption onUserCancel)
+   at Microsoft.VisualBasic.MyServices.FileSystemProxy.DeleteFile(String file)
+   at v1._0.frmMenu.ResetAllProgramCacheToolStripMenuItem_Click(Object sender, EventArgs e) in E:\Coursework\Program\v2.1\frmMenu.vb:line 149

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Eaton Manafacturing System
+</name>
+</assembly>
+<members>
+<member name="T:v1._0.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:v1._0.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:v1._0.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:v1._0.algotihm_library.print_label_location(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+ <summary>
+ By Passing Settings This Sub Will Format Labels And Print To Given Destination
+ </summary>
+ <param name="labels">Amount Of Columns</param>
+ <param name="bcolour">Background Colour.</param>
+ <param name="fgcolour">Font Colour</param>
+ <param name="fontfamily">Font Family</param>
+ <param name="fontsize">Font Size</param>
+ <param name="destinationLocation">Destination Location</param>
+ <param name="destinationName">Destination Name</param>
+ <param name="destinationExtension">Destination Extension</param>
+ <remarks>Luke Price - 2017</remarks>
+</member>
+</members>
+</doc>
