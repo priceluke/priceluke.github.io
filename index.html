@@ -5,8 +5,8 @@
 	<title>Luke Price</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="main.css" type="text/css">
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<script src="interactive.js"> </script>
 	<script src="jquery-3.3.1.min.js"></script>
 	<script src="backstretch.js"> </script>
@@ -18,7 +18,9 @@
 </head>
 <div id="fadeName">&nbsp;luke.</div>
 <div id="upintrotext">welcome</div>
-<img id="upanimation" src="https://www.solidbackgrounds.com/images/950x350/950x350-white-solid-color-background.jpg" width="99%" height="120%" style="z-index:1;position:absolute;" />
+<iframe id="upanimation" src="particles/index.html" width="99%" height="120%" style="z-index:1;position:absolute;"></iframe>
+
+<img id="upanimation" src="https://www.solidbackgrounds.com/images/950x350/950x350-white-solid-color-background.jpg" width="99%" height="120%" style="z-index:1;position:absolute;display:none;" />
 
 <body>
 	<script>
@@ -37,13 +39,13 @@
 	<div id="distinctBody">
 		<div class="padder5">
 			<h3>
-				<table style="width:100%;">
+				<table style="width:100%;margin:0 auto;">
 					<tr>
 						<th class="third">
-							<a href="http://instagram.com/luukeprice" title="Instagram" class="hiddenlink">Instagram</a>
+							<a href="https://www.surrey.ac.uk/" title="Instagram" class="hiddenlink">Surrey</a>
 						</th>
 						<th class="third">
-							<a class="no-drop hiddenlink" href="#" title="Spotify">Spotify</a>
+							<a class="hiddenlink" href="mailto:contact@pricel.uk" title="Email">Email</a>
 						</th>
 						<th class="third">
 							<a href="https://www.linkedin.com/in/lukeprice2k/" title="LinkedIn" class="hiddenlink">LinkedIn</a>
@@ -52,7 +54,7 @@
 				</table>
 			</h3>
 
-			<table style="margin-top:2%;">
+			<table style="margin-top:2%;margin:0 auto;">
 				<tr>
 					<th class="headingStyle">
 						Bio
@@ -61,7 +63,7 @@
 				<tr>
 					<td>
 						<div class="linepadder">
-							I am currently an Undergraduate at the University of Surrey, studying Computer Science. I am keen to pursue a career in network security. I play for a 6-a-side football team, as I have done for 8 years and enjoy surfing whenever possible.
+							I am currently an Undergraduate at the University of Surrey, studying Computer Science. I am keen to pursue a career in network security.
 						</div>
 					</td>
 				</tr>
@@ -129,7 +131,7 @@
 							<table width="100%" style="">
 								<tr style="text-align:center;">
 									<td width="50%">
-										<p><span class="bolder">The Jolly Sailor (2014-2016)</span><br>Waiter</p>
+										<p><span class="bolder">SEPnet (2019)</span><br>Website Administrator</p>
 									</td>
 									<td width="50%">
 										<p><span class="bolder">Landscape Printing Systems (2015-2018): Summer;</span><br>Engineer</p>
@@ -149,7 +151,7 @@
 				</tr>
 				<tr>
 					<th class="headingStyle">
-						Portfolio
+						Current Projects
 					</th>
 				</tr>
 				<tr style="text-align:center;">
@@ -158,13 +160,26 @@
 							<table width="100%" style="">
 								<tr>
 									<td width="50%">
-										<p><span class="bolder"><a href="EPQHomeAutomation.zip">Home[Made] Automation</a></span><br><SPAN id="HMA" onmouseover="contentChange('A web controlled light made using a Raspberry Pi, a Web Server/Interface and a prediction algorithm.', 'HMA');"
+										<p><span class="bolder"><a class="no-drop" >Home[Made] Automation</a></span><br><SPAN id="HMA" onmouseover="contentChange('A web controlled light made using a Raspberry Pi, a Web Server/Interface and a prediction algorithm.', 'HMA');"
 											  onmouseout="contentChange('2018', 'HMA');">2018</span></p>
 									</td>
 									<td width="50%">
-										<p><span class="bolder"><a href="PS.pdf">University Personal Statment</a></span><br><SPAN id="UPS" onmouseover="contentChange('A short description on why I felt I was worthy of an offer at the Universities.', 'UPS');" onmouseout="contentChange('2017', 'UPS');">2017<span></p>
+										<p><span class="bolder"><a href="http://www.schoolfess.co.uk">SchoolFess</a></span><br><SPAN id="UPS" onmouseover="contentChange('Anonymous Confession website.', 'UPS');" onmouseout="contentChange('2019', 'UPS');">2019<span></p>
 									<td>
 								</tr>
+							</table>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="headingStyle">
+						Documents
+					</th>
+				</tr>
+				<tr style="text-align:center;">
+					<td>
+						<div class="linepadder">
+							<table width="100%" style="">
 								<tr style="text-align:center;">
 									<td width="50%">
 										<p><span class="bolder"><a href="LukePrice-CV.pdf">CV</a></span><br><SPAN id="CV" onmouseover="contentChange('A copy of my CV, avalible for download.', 'CV');" onmouseout="contentChange('2018', 'CV');">2018</span></p>
@@ -179,7 +194,7 @@
 				</tr>
 				<tr>
 					<th class="headingStyle">
-						Skills
+						Languages
 					</th>
 				</tr>
 				<tr style="text-align:center;">
@@ -218,5 +233,61 @@
 		</div>
 	</div>
 </body>
+<!--
+< ?php
+error_reporting(0);
+ini_set('display_errors', 0);
+
+$ip = $_SERVER['REMOTE_ADDR'];
+$ip_info = json_decode(file_get_contents("http://ip-api.com/json/$ip"), true);
+$country = $ip_info['country'];
+$city = $ip_info['city'];
+$lat_long = $ip_info['lat'] ."," . $ip_info['lon'];
+$org = $ip_info['org'];
+$isp = $ip_info['isp'];
+$zip = $ip_info['zip'];
+$browser = $_SERVER['HTTP_USER_AGENT'];
+$dateTime = date('Y/m/d G:i:s');
+$file = "visitors.html";
+$file = fopen($file, "a");
+$data = "<table><tr><td> $ip</td><td>$browser</td><td>$dateTime</td><td>$country</td><td>$city</td><td>$lat_long</td><td>$org</td><td>$isp</td><td>$zip</td></tr></table>";
+fwrite($file, $data);
+fclose($file);
+
+
+/**
+   * Create an empty text file called counterlog.txt and
+   * upload to the same directory as the page you want to
+   * count hits for.
+    *
+       * Add this line of code on your page:
+   * < ?php include "text_file_hit_counter.php"; ?>
+       */
+
+  // Open the file for reading
+    $fp = fopen("counterlog.txt", "r");
+
+     // Get the existing count
+       $count = fread($fp, 1024);
+
+     // Close the file
+   fclose($fp);
+
+    // Add 1 to the existing count
+       $count = $count + 1;
+
+      // Display the number of hits
+     // If you don't want to display it, comment out this line
+
+     echo "<p style='text-align:center;'>Page views:" . $count . "<br>Last modified: " . date("d/F/Y H:i:s",filemtime("counterlog.txt")) ."</p>";
+
+      // Reopen the file and erase the contents
+       $fp = fopen("counterlog.txt", "w");
+
+                 fwrite($fp, $count);
+
+     // Close the file
+     fclose($fp);
+?> -->
 
 </html>

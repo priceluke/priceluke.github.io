@@ -233,8 +233,8 @@
 		</div>
 	</div>
 </body>
-
-<?php
+<!--
+< ?php
 error_reporting(0);
 ini_set('display_errors', 0);
 
@@ -261,7 +261,7 @@ fclose($file);
    * count hits for.
     *
        * Add this line of code on your page:
-   * <?php include "text_file_hit_counter.php"; ?>
+   * < ?php include "text_file_hit_counter.php"; ?>
        */
 
   // Open the file for reading
@@ -288,6 +288,6 @@ fclose($file);
 
      // Close the file
      fclose($fp);
-?>
+?> -->
 
 </html>
