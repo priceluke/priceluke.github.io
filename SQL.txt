@@ -1,0 +1,120 @@
+MySQL
+
+a brief introduction
+
+
+CMD INTERFACE:
+	mysql -u root
+	/*enter into database managment client */
+	show databases;
+	create database testdb;
+	show databases;
+	use testdb;
+	CREATE TABLE.... ;
+	describe tablename;
+	
+DDL:
+	create database
+	create table
+	alter table
+	drop table
+	drop database
+
+DML:
+	INSERT
+	UPDATE
+	DELETE
+
+QL:
+	SELECT
+	
+DATABASE == SCHEMA
+TABLE == RELATION
+COLUMN == ATTRIBUTE
+
+IDENTIFIERS:
+	"db" , "tab", "col", "db.tab", "tab.col", "db.tab.col"
+	
+COMMENTS:
+	/* COMMENTS */
+	-- COMMENTS
+	# COMMENTS
+	
+STRINGS:
+	SINGLE OR DOUBLE QUOTES
+	SEPERATED STRINGS ARE CONCATONATED
+		SELECT 'AAA' 'BBB'
+			== SELECT 'AAA BBB'
+
+HELP:
+	SHOW HELP FOR DESIRED SQL STATMENT
+	'HELP SELECT' SHOWS ALL HELP INFORMATION FOR SELECT
+
+SELECT:
+	USED TO RETRIIVE DATA FROM EXISTING TABLE
+
+"SHOW DATABASES":
+	DISPLAYS ALL DATABASES
+
+CREATE DATABASE [IF NOT EXISTS] db_name;
+
+USE:
+	"USE DATABASE"
+	SELECTS DATABASE TO USE
+
+CREATE TABLE [] table_name {
+	column_1 data_type_1 [attributes],
+	column_2 data_type_2 [attributes],
+	column_3 data_type_3 [attributes],
+	PRIMARY_KEY (column_name(s)),
+	FORIGN_KEY (coulmn_name(s)) REFERENCES table2_name(s)(column_names(S)),
+	UNIQUE (column_name(s))
+	}
+
+DATATYPES:
+	TINYINT 8-BIT
+	SMALLINT 16-BIT
+	MEDIUMINT 24-INT
+	INT 32-INT
+	BIGINT 64-INT
+	BIT [BIT FIELD TYPE]
+	DECIMAL/DEC/NUMERIC/FIXED
+	FLOAT
+	DOUBLE
+	CHAR
+	VARCHAR
+	TEXT
+		TINYTEXT
+		MEDIUMTEXT
+		LONGTEXT
+		VARCHAR
+	BINARY
+	VARBINARY
+	BLOB
+		TINYBLOB
+		MEDIUMBLOB
+		LONGBLOB
+		
+INSERT [INTO] table_name (column_1,column_2) VALUES ('test', 'test2');
+
+SELECT
+
+	AS STANDARD
+OPERATORS
+	BUT WITH:
+		A BETWEEN B AND C
+		A LIKE B
+		A IN (A,B,C,D,E) #RETURNS TRUE/FALSE
+
+UPDATE TABLE_NAME1 SET COLUMN_NAME1=VALUE1 WHERE COULMN_NAME2 = 'EXAMPLE';
+
+PHP/SQL:
+	<?PHP
+	$CONN = MYSQLI_CONNECT("SERVER", "USER", "PASSWORD", "DATABASE");
+	$RESULT = MYSQLI_QUERY($CONN, "EXPRESSION");
+	WHILE ($R = MYSQLI_FETCH_ASSOC($RESULT)) {
+		ECHO $R["NAME"], " + ", $R["OFFICE"];
+	}
+	MYSQLI_FREE_RESULT($RESULT);
+	MYSQLI_CLOSE()$CONN;
+	}

@@ -137,7 +137,7 @@ body {
 }
 
 #upanimation {
-  -webkit-animation: upmove 4s 1s forwards;
+  -webkit-animation: upmove 6s 1s forwards;
   /* Safari 4.0 - 8.0 */
 }
 
