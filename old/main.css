@@ -1,0 +1,186 @@
+#myname {
+  font-family: Niagara, sans-serif;
+  font-style: normal;
+  letter-spacing: 4px;
+  font-size: 120px;
+  font-weight: 500;
+  opacity: 0.4;
+  margin-top: -30px;
+}
+
+#fadeName {
+  /*margin-top: 0.5%;/*/
+  top: 0.2%;
+  left: 0px;
+  z-index: 2;
+  font-family: Niagara, sans-serif;
+  font-style: normal;
+  letter-spacing: 4px;
+  font-size: 120px;
+  font-weight: 500;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  animation-name: upname;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-direction: reverse;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.bolder {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.headingStyle {
+  font-size: 22px;
+  border-bottom-style: solid;
+}
+
+a {}
+
+#pageHeadder {
+  list-style: none;
+  text-align: center;
+  margin-top: 1%;
+  padding-top: 0;
+  font-size: 36px;
+  top: 0px;
+  left: center;
+}
+
+#academicStatus {
+  font-size: 14px;
+}
+
+#uniName {
+  font-size: 12px;
+}
+
+#studentType {
+  font-size: 12px;
+}
+
+.hiddenlink {
+  color: #001f3f;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+.hiddenlink:hover {
+  color: lightgrey;
+}
+
+.hiddenlink a {}
+
+.plainlink {
+  color: black;
+  text-decoration: none;
+}
+
+.padder5 {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.linepadder {
+  margin-top: 1%;
+}
+
+.third {
+  width: 33%;
+  vertical-align: top;
+}
+
+.half {
+  width: 50%;
+  vertical-align: top;
+}
+
+#distinctBody {
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 7%;
+  border-width: 5px;
+  background: rgba(255, 255, 255, .95);
+  height: 105%;
+  border-style: solid;
+}
+
+body {
+  /*  background-repeat: no-repeat;
+  background-image: url("background.jpg");
+  background-position: ;
+  background-attachment: fixed;
+	height:100%;
+	   width:100%;
+	   background-image:url(background.jpg);your background image
+	   background-repeat:no-repeat;/*we want to have one single image not a repeated one
+	   background-size:cover;/*this sets the image to fullscreen covering the whole screen*/
+  font-family: "courier new";
+  background-size: auto 40%;
+}
+
+.no-drop {
+  cursor: no-drop;
+}
+
+#upanimation {
+  -webkit-animation: upmove 6s 1s forwards;
+  /* Safari 4.0 - 8.0 */
+}
+
+#upintrotext {
+  z-index: 2;
+  font-family: Niagara, sans-serif;
+  font-style: normal;
+  letter-spacing: 4px;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  width: 99%;
+  top: 50%;
+  text-align: center;
+  -webkit-animation: introfade 2s 1s forwards;
+  /* Safari 4.0 - 8.0 */
+}
+
+@keyframes introfade {
+  0% {}
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes upmove {
+  0% {}
+
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+
+@keyframes upname {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: 30%;
+  }
+}
