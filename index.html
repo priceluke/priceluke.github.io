@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>Luke Price</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+#upanimation {
+  -webkit-animation: upmove 8s 2s forwards;
+  /* Safari 4.0 - 8.0 */
+}
+
+@keyframes upmove {
+  0% {}
+
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
 </style>
+	<script>
+		window.onbeforeunload = function() {
+			window.scrollTo(0, 0);
+		}
+	</script>
+</head>
 <body class="w3-light-grey">
+
+<iframe id="upanimation" src="old/particles/index.html" width="100%" height="120%" style="z-index:1;position:absolute;left:-4px;"></iframe>
+
 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
@@ -27,14 +53,14 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
-    <img src="images/sunset.jpg" alt="Nature" style="width:100%;">
+    <img src="images/sunset.JPG" alt="Nature" style="width:100%;">
     <div class="w3-container">
       <h3><b>Hello World.</b></h3>
       <h5><span class="w3-opacity">April 12, 2019</span></h5>
     </div>
 
     <div class="w3-container">
-      <p>The idea of blogs has always confused me; people arrogant enough to think that what they have to say is interesting enough for others to spend their time reading. I'll avoid this. 
+      <!-- <p>The idea of blogs has always confused me; people arrogant enough to think that what they have to say is interesting enough for others to spend their time reading. I'll avoid this. -->
 <br><br>
 The posts on this page will be about topics I find interesting and, although inevitably infrequent,  will give an insight into Degree Computer Science and Industry Cyber Security.</p>
       <div class="w3-row">
@@ -199,7 +225,51 @@ The posts on this page will be about topics I find interesting and, although ine
 		<br>
       </li>
   </div>
-  <hr> 
+  <hr>
+
+    <!-- Languages -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Languages</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="images/java.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+        <span class="w3-large">Java</span>
+		<br>
+      </li>          
+	  <li class="w3-padding-16">
+        <img src="images/fullstack.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+        <span class="w3-large">Full Stack</span>
+		<br>
+      </li>      
+	  <li class="w3-padding-16">
+        <img src="images/csharp.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+        <span class="w3-large">C#</span>
+		<br>
+      </li>    
+	  <li class="w3-padding-16">
+        <img src="images/vb.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+        <span class="w3-large">VB.net</span>
+		<br>
+      </li>          
+	  <li class="w3-padding-16">
+        <img src="images/haskell.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+        <span class="w3-large">Haskell</span>
+		<br>
+      </li>  
+      <li class="w3-padding-16">
+        <img src="images/python.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+        <span class="w3-large">Python</span>
+		<br>
+      </li>      
+	  <li class="w3-padding-16">
+        <img src="images/assembely.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+        <span class="w3-large">Assembly</span>
+		<br>
+      </li>        	  
+  </div>
+  <hr>   
   
 <!-- END Introduction Menu -->
 </div>
