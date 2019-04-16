@@ -1,291 +1,403 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Luke Price</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<title>Luke Price</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-<style>
-#iframe { position: absolute; float: left; clear: both; width: 100%; height: 150px; z-index: -1;}
+	<style>
+		#iframe {
+			position: absolute;
+			float: left;
+			clear: both;
+			width: 100%;
+			height: 150px;
+			z-index: -1;
+		}
 
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-#upanimation {
-  -webkit-animation: upmove 8s 2s forwards;
-  /* Safari 4.0 - 8.0 */
-}
+		body,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			font-family: "Raleway", sans-serif
+		}
 
-@keyframes upmove {
-  0% {}
+		#upanimation {
+			-webkit-animation: upmove 8s 2s forwards;
+			/* Safari 4.0 - 8.0 */
+		}
 
-  100% {
-    opacity: 0;
-    display: none;
-    z-index: -1;
-  }
-}
-</style>
+		@keyframes upmove {
+			0% {}
+
+			100% {
+				opacity: 0;
+				display: none;
+				z-index: -1;
+			}
+		}
+	</style>
 	<script>
 		window.onbeforeunload = function() {
 			window.scrollTo(0, 0);
 		}
+
+		function viewOnGit(url, elementID) {
+			var btn = document.createElement("SPAN"); // Create a <button> element
+			btn.innerHTML = '<a href="' + url + '"><img style="height:40px;float:right;" src="images/gitcat.png" /></a>'; // Insert text
+			document.getElementById(elementID).appendChild(btn);
+		}
 	</script>
 </head>
+
 <body class="w3-light-grey">
 
 
 
-<!-- w3-content defines a container for fixed size centered content, 
+	<!-- w3-content defines a container for fixed size centered content,
 and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
+	<div class="w3-content" style="max-width:1400px">
 
-<!-- Header -->
-<header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>Luke Price</b></h1>
-  <p><span class="w3-tag">PERSONAL WEBSITE</span></p>
-</header>
+		<!-- Header -->
+		<header class="w3-container w3-center w3-padding-32">
+			<h1><b>Luke Price</b></h1>
+			<p><span class="w3-tag">PERSONAL WEBSITE</span></p>
+		</header>
 
-<!-- Grid -->
-<div class="w3-row">
+		<!-- Grid -->
+		<div class="w3-row">
 
-<!-- Blog entries -->
-<div class="w3-col l8 s12">
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <img src="images/sunset.JPG" alt="Nature" style="width:100%;">
-    <div class="w3-container">
-      <h3><b><span style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">luke@pricel.uk:~$ echo "Hello World."</b></h3>
-      <h5><span class="w3-opacity">April 12, 2019</span></h5>
-    </div>
+			<!-- Blog entries -->
+			<div class="w3-col l8 s12">
+				<!-- Blog entry -->
+				<div class="w3-card-4 w3-margin w3-white">
+					<img src="images/sunset.JPG" alt="Nature" style="width:100%;">
+					<div class="w3-container">
+						<h3><b><span style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">luke@pricel.uk:~$ echo "Hello World."</b></h3>
+						<h5><span class="w3-opacity">April 12, 2019</span></h5>
+					</div>
 
-    <div class="w3-container">
-      <!-- <p>The idea of blogs has always confused me; people arrogant enough to think that what they have to say is interesting enough for others to spend their time reading. I'll avoid this. -->
-The posts on this page will be about topics I find interesting and, although inevitably infrequent,  will give an insight into Degree Computer Science and Industry Cyber Security.</p>
-      <div class="w3-row">
-		<br>
-      </div>
-    </div>
-  </div>
-  <hr>
+					<div class="w3-container">
+						<!-- <p>The idea of blogs has always confused me; people arrogant enough to think that what they have to say is interesting enough for others to spend their time reading. I'll avoid this. -->
+						The posts on this page will be about topics I find interesting and, although inevitably infrequent, will give an insight into Degree Computer Science and Industry Cyber Security.</p>
+						<div class="w3-row">
+							<br>
+						</div>
+					</div>
+				</div>
+				<hr>
 
-<!-- END BLOG ENTRIES -->
-</div>
+				<!-- Blog entry -->
+				<div class="w3-card-4 w3-margin w3-white">
+					<img src="images/Encryptionhandler.JPG" alt="Nature" style="width:100%;">
+					<div class="w3-container">
+						<h3><b><span id="RSA" style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">RSA Cryptography<script>
+										viewOnGit("https://github.com/priceluke/RSAChat", "RSA");
+									</script></b></h3>
+						<h5><span class="w3-opacity">April 15, 2019</span></h5>
+					</div>
+					<div class="w3-container">
+						As part of a Software Engineering Assignment, this Java project combined Rivest–Shamir–Adleman Cryptography with a TCP chat program to provide Users with secure communication. The RSA Class is available for download as acts as a good wrapper
+						for the encryption and decryption processes but the full project can be found on my GitHub page. <div class="w3-row">
+							<br>
+						</div>
+					</div>
+				</div>
+				<hr>
 
-<!-- Introduction menu -->
-<div class="w3-col l4">
-  <!-- About Card -->
-  <div class="w3-card w3-margin w3-margin-top">
-  <img src="images/about_head.png" style="width:100%">
-    <div class="w3-container w3-white">
-      <h4><b>About</b></h4>
-      <p>This site primarily serves as a place to document interesting topics that I come across. I have also included an abridged employment & academic history.</p>
-    </div>
-  </div><hr>
-  
-  <!-- GCSE -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Academic Performance - University</h4>
-    </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16">
-        <img src="images/q.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">BSc Computer Science</span><br>
-		<span class="w3-medium">University of Surrey</span>
-		<br>
-      </li>
-    </ul>
-  </div>
-  <hr> 
-  
-  <!-- GCSE -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Academic Performance - A Level</h4>
-    </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16">
-        <img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">Maths</span>
-		<br>
-      </li>
-      <li class="w3-padding-16">
-        <img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-         <span class="w3-large">Further Maths</span>
-		<br>
-      </li> 
-      <li class="w3-padding-16">
-        <img src="images/b.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">EPQ</span>
-		<br>
-      </li>   
-      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="images/b.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">Physics</span>
-		<br>
-      </li>
-	  <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="images/b.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">Computer Science</span>
-		<br>
-      </li>
-    </ul>
-  </div>
-  <hr> 
-  <!-- GCSE -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Academic Performance - GCSE</h4>
-    </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16">
-        <img src="images/as.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">Computer Science</span>
-		<br>
-      </li>
-      <li class="w3-padding-16">
-        <img src="images/as.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-         <span class="w3-large">Physics</span>
-		<br>
-      </li> 
-      <li class="w3-padding-16">
-        <img src="images/as.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">ICT</span>
-		<br>
-      </li>   
-      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">Further Maths</span>
-		<br>
-      </li>
-	  <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">Maths</span>
-		<br>
-      </li> 	  <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">Biology</span>
-		<br>
-      </li> 	  
-	  <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">Chemistry</span>
-		<br>
-      </li> 	  
-	  <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">Physical Ed.</span>
-		<br>
-      </li>	  
-	  <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">English Lang.</span>
-		<br>
-      </li>	  
-	  <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="images/b.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">English Lit.</span>
-		<br>
-      </li> 
-    </ul>
-  </div>
-  <hr> 
+				<!-- Blog entry -->
+				<div class="w3-card-4 w3-margin w3-white">
+					<img src="images/euler.JPG" alt="Nature" style="width:100%;">
+					<div class="w3-container">
+						<h3><b><span id="Euler" style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">Project Euler<script>
+										viewOnGit("https://github.com/priceluke/project-euler/", "Euler");
+									</script></b></h3>
+						<h5><span class="w3-opacity">April 15, 2019</span></h5>
+					</div>
+					<div class="w3-container">
+						Project Euler is a collection of computational problems that can be solved using various mathematical approaches in under a minute on an average CPU. There are nearly a million users on the site and over 600 problems to solve with new ones
+						being added every few weeks<sup> [<a href="https://projecteuler.net/statistics">1</a>]</sup>. These challenges have appealed to me from a problem-solving standpoint so from time to time I will complete a task. The solutions are available on my
+						GitHub (<a href="https://projecteuler.net/about#forum">don't tell)</a> to showcase how I work through problems.<div class="w3-row">
+							<br>
+						</div>
+					</div>
+				</div>
+				<hr>
 
-  
-    <!-- Work Experience -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Employment History</h4>
-    </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16">
-        <img src="images/sepnet.jpg" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">SEPnet Web Administrator</span><br>
-        <span class="w3-small">2019</span>
-		<br>
-      </li>      
-	  <li class="w3-padding-16">
-        <img src="images/disking.png" alt="Image" class="w3-left w3-margin-right" style="margin-top:10px;width:45px; height:25px;">
-        <span class="w3-large">Disking Weekend Manager</span><br>
-        <span class="w3-small">2016-2018</span>
-		<br>
-      </li>	  
-	  <li class="w3-padding-16">
-        <img src="images/lsp.png" alt="Image" class="w3-left w3-margin-right" style="width:45px;">
-        <span class="w3-large">LPS Engineer</span><br>
-        <span class="w3-small">2015-2018 Summer</span>
-		<br>
-      </li>
-	  	  <li class="w3-padding-16">
-        <img src="images/coop.png" alt="Image" class="w3-left w3-margin-right" style="width:45px;">
-        <span class="w3-large">Co-op CSA</span><br>
-        <span class="w3-small">2018</span>
-		<br>
-      </li>
-  </div>
-  <hr>
+				<!-- Blog entry -->
+				<div class="w3-card-4 w3-margin w3-white">
+					<img src="images/cyber.png" alt="Nature" style="width:100%;">
+					<div class="w3-container">
+						<h3><b><span style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">GCHQ Cyber Insights Summer School</b></h3>
+						<h5><span class="w3-opacity">April 15, 2019</span></h5>
+					</div>
+					<div class="w3-container">
+						Received 10 weeks of paid, comprehensive Cyber Security training in Cheltenham including lectures given by world-class cyber experts, exams and projects. As a result of this training, the partnership will be continued.<sup> [<a href="https://www.gchq-careers.co.uk/early-careers/students.html">2</a>]</sup>
+						<div class="w3-row">
+							<br>
+						</div>
+					</div>
+				</div>
+				<hr>
 
-    <!-- Languages -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>Languages</h4>
-    </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16">
-        <img src="images/java.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">Java</span>
-		<br>
-      </li>          
-	  <li class="w3-padding-16">
-        <img src="images/fullstack.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">Full Stack</span>
-		<br>
-      </li>      
-	  <li class="w3-padding-16">
-        <img src="images/csharp.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">C#</span>
-		<br>
-      </li>    
-	  <li class="w3-padding-16">
-        <img src="images/vb.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">VB.net</span>
-		<br>
-      </li>          
-	  <li class="w3-padding-16">
-        <img src="images/haskell.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">Haskell</span>
-		<br>
-      </li>  
-      <li class="w3-padding-16">
-        <img src="images/python.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">Python</span>
-		<br>
-      </li>      
-	  <li class="w3-padding-16">
-        <img src="images/assembely.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-        <span class="w3-large">Assembly</span>
-		<br>
-      </li>        	  
-  </div>
-  <hr>   
-  
-<!-- END Introduction Menu -->
-</div>
+				<!-- Blog entry -->
+				<div class="w3-card-4 w3-margin w3-white">
+					<img src="images/hma.png" alt="Nature" style="width:100%;">
+					<div class="w3-container">
+						<h3><b><span id="HMA" style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">Home[Made] Automation<script>
+										viewOnGit("https://github.com/priceluke/Home-Made-Automation", "HMA");
+									</script></b></h3>
+						<h5><span class="w3-opacity">April 16, 2019</span></h5>
+					</div>
+					<div class="w3-container">
+						During College, as part of my Extended Project, I created a smart lightbulb using a WAMP server, a raspberry pi and a prediction model. The web interface was written in PHP, Raspberry Pi & channel relay in Python and Prediction Model in C#.
+						<div class="w3-row">
+							<br>
+						</div>
+					</div>
+				</div>
+				<hr>
 
-<!-- END GRID -->
-</div><br>
+				<!-- Blog entry -->
+				<div class="w3-card-4 w3-margin w3-white">
+					<img src="images/confess.png" alt="Nature" style="width:100%;">
+					<div class="w3-container">
+						<h3><b><span style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">SchoolFess</b></h3>
+						<h5><span class="w3-opacity">April 15, 2019</span></h5>
+					</div>
+					<div class="w3-container">
+						An anonymous confession site for UK Schools with IP banning, moderation, administration, voting and reporting. Written in PHP & MySql, this was hosted on an AWS for a while, amassing over 5,000 views and 100 posts.
+						<div class="w3-row">
+							<br>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<!-- END BLOG ENTRIES -->
+			</div>
 
-<!-- END w3-content -->
-</div>
+			<!-- Introduction menu -->
+			<div class="w3-col l4">
+				<!-- About Card -->
+				<div class="w3-card w3-margin w3-margin-top">
+					<img src="images/about_head.png" style="width:100%">
+					<div class="w3-container w3-white">
+						<h4><b>About</b></h4>
+						<p>This site primarily serves as a place to document projects I have undertaken. I have also included an abridged employment & academic history.</p>
+					</div>
+				</div>
+				<hr>
 
-<!-- Footer -->
-<div class="w3-card-4 w3-margin w3-white w3-margin-top">
-	<iframe id="iframe" src="old/particles/index_footer.html" frameborder="0"></iframe>
-</div>
+				<!-- GCSE -->
+				<div class="w3-card w3-margin">
+					<div class="w3-container w3-padding">
+						<h4>Academic Performance - University</h4>
+					</div>
+					<ul class="w3-ul w3-hoverable w3-white">
+						<li class="w3-padding-16">
+							<img src="images/q.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">BSc Computer Science</span><br>
+							<span class="w3-medium">University of Surrey</span>
+							<br>
+						</li>
+					</ul>
+				</div>
+				<hr>
+
+				<!-- GCSE -->
+				<div class="w3-card w3-margin">
+					<div class="w3-container w3-padding">
+						<h4>Academic Performance - A Level</h4>
+					</div>
+					<ul class="w3-ul w3-hoverable w3-white">
+						<li class="w3-padding-16">
+							<img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">Maths</span>
+							<br>
+						</li>
+						<li class="w3-padding-16">
+							<img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">Further Maths</span>
+							<br>
+						</li>
+						<li class="w3-padding-16">
+							<img src="images/b.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">EPQ</span>
+							<br>
+						</li>
+						<li class="w3-padding-16 w3-hide-medium w3-hide-small">
+							<img src="images/b.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">Physics</span>
+							<br>
+						</li>
+						<li class="w3-padding-16 w3-hide-medium w3-hide-small">
+							<img src="images/b.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">Computer Science</span>
+							<br>
+						</li>
+					</ul>
+				</div>
+				<hr>
+				<!-- GCSE -->
+				<div class="w3-card w3-margin">
+					<div class="w3-container w3-padding">
+						<h4>Academic Performance - GCSE</h4>
+					</div>
+					<ul class="w3-ul w3-hoverable w3-white">
+						<li class="w3-padding-16">
+							<img src="images/as.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">Computer Science</span>
+							<br>
+						</li>
+						<li class="w3-padding-16">
+							<img src="images/as.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">Physics</span>
+							<br>
+						</li>
+						<li class="w3-padding-16">
+							<img src="images/as.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">ICT</span>
+							<br>
+						</li>
+						<li class="w3-padding-16 w3-hide-medium w3-hide-small">
+							<img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">Further Maths</span>
+							<br>
+						</li>
+						<li class="w3-padding-16 w3-hide-medium w3-hide-small">
+							<img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">Maths</span>
+							<br>
+						</li>
+						<li class="w3-padding-16 w3-hide-medium w3-hide-small">
+							<img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">Biology</span>
+							<br>
+						</li>
+						<li class="w3-padding-16 w3-hide-medium w3-hide-small">
+							<img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">Chemistry</span>
+							<br>
+						</li>
+						<li class="w3-padding-16 w3-hide-medium w3-hide-small">
+							<img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">Physical Ed.</span>
+							<br>
+						</li>
+						<li class="w3-padding-16 w3-hide-medium w3-hide-small">
+							<img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">English Lang.</span>
+							<br>
+						</li>
+						<li class="w3-padding-16 w3-hide-medium w3-hide-small">
+							<img src="images/b.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">English Lit.</span>
+							<br>
+						</li>
+					</ul>
+				</div>
+				<hr>
+
+
+				<!-- Work Experience -->
+				<div class="w3-card w3-margin">
+					<div class="w3-container w3-padding">
+						<h4>Employment History</h4>
+					</div>
+					<ul class="w3-ul w3-hoverable w3-white">
+						<li class="w3-padding-16">
+							<img src="images/sepnet.jpg" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">SEPnet Web Administrator</span><br>
+							<span class="w3-small">2019</span>
+							<br>
+						</li>
+						<li class="w3-padding-16">
+							<img src="images/disking.png" alt="Image" class="w3-left w3-margin-right" style="margin-top:10px;width:45px; height:25px;">
+							<span class="w3-large">Disking Weekend Manager</span><br>
+							<span class="w3-small">2016-2018</span>
+							<br>
+						</li>
+						<li class="w3-padding-16">
+							<img src="images/lsp.png" alt="Image" class="w3-left w3-margin-right" style="width:45px;">
+							<span class="w3-large">LPS Engineer</span><br>
+							<span class="w3-small">2015-2018 Summer</span>
+							<br>
+						</li>
+						<li class="w3-padding-16">
+							<img src="images/coop.png" alt="Image" class="w3-left w3-margin-right" style="width:45px;">
+							<span class="w3-large">Co-op CSA</span><br>
+							<span class="w3-small">2018</span>
+							<br>
+						</li>
+				</div>
+				<hr>
+
+				<!-- Languages -->
+				<div class="w3-card w3-margin">
+					<div class="w3-container w3-padding">
+						<h4>Languages</h4>
+					</div>
+					<ul class="w3-ul w3-hoverable w3-white">
+						<li class="w3-padding-16">
+							<img src="images/java.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">Java</span>
+							<br>
+						</li>
+						<li class="w3-padding-16">
+							<img src="images/fullstack.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large" onmouseover="this.innerHTML='kind of...';" onmouseout="this.innerHTML='Full Stack';">Full Stack</span>
+							<br>
+						</li>
+						<li class="w3-padding-16">
+							<img src="images/csharp.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">C#</span>
+							<br>
+						</li>
+						<li class="w3-padding-16">
+							<img src="images/vb.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">VB.net</span>
+							<br>
+						</li>
+						<li class="w3-padding-16">
+							<img src="images/haskell.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">Haskell</span>
+							<br>
+						</li>
+						<li class="w3-padding-16">
+							<img src="images/python.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">Python</span>
+							<br>
+						</li>
+						<li class="w3-padding-16">
+							<img src="images/assembely.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+							<span class="w3-large">Assembly</span>
+							<br>
+						</li>
+				</div>
+				<hr>
+
+				<!-- END Introduction Menu -->
+			</div>
+
+			<!-- END GRID -->
+		</div><br>
+
+		<!-- END w3-content -->
+	</div>
+
+	<!-- Footer -->
+	<div class="w3-card-4 w3-margin w3-white w3-margin-top">
+		<iframe id="iframe" src="old/particles/index_footer.html" frameborder="0"></iframe>
+	</div>
 
 
 </body>
+
 </html>
