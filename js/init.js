@@ -22,3 +22,9 @@ function viewOnGit(url, elementID) {
 
 var width = $(window).width();
 $(window).on('resize', swap_OnResize);
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-145704923-1');
