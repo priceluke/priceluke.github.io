@@ -1,0 +1,42 @@
+.card_image {
+  width: 100%;
+  height: 100%;
+}
+
+#iframe {
+  position: absolute;
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 150px;
+  z-index: -1;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif
+}
+
+#upanimation {
+  -webkit-animation: upmove 8s 2s forwards;
+  /* Safari 4.0 - 8.0 */
+}
+
+@keyframes upmove {
+  0% {}
+
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+
+.panel_title {
+  margin-top: 5px;
+  font: 1.3rem Inconsolata, monospace;
+}

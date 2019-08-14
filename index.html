@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html>
+<!--
 
+			     .-""-.
+                /      \
+               /     (0 \______    __       _            ___      _            ____   ___  _  ___
+               |         "_____)  / / _   _| | _____    / _ \_ __(_) ___ ___  |___ \ / _ \/ |/ _ \
+               \        ,-----'  / / | | | | |/ / _ \  / /_)/ '__| |/ __/ _ \   __) | | | | | (_) |
+                \_    _/        / /__| |_| |   <  __/ / ___/| |  | | (_|  __/  / __/| |_| | |\__, |
+                 /    \         \____/\__,_|_|\_\___| \/    |_|  |_|\___\___| |_____|\___/|_|  /_/
+                /      \
+               /        \
+              /          |
+             /        :  |
+            /     ;   :  |
+   \\\     /  _.-'    :  |
+    \\\\  / _'        :  |
+     \\\\/ ;         :   /
+      \\  ;         :   /
+       \   `._`-'_.'  _/
+        \     ''' _.-'
+         \      / /
+     jgs  \    / /
+           \  /)(_______
+            )(_________<
+           (__________<
+
+-->
 <head>
 	<title>Luke Price</title>
 	<meta charset="UTF-8">
@@ -8,64 +34,29 @@
 	<meta name="Description" content="BSc Computer Science - University of Surrey">
 	<meta name="Keywords" content="computer science surrey uni university luke price portsmouth pricel uk hacking cyber security bsc">
 
+<!-- some google analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145704923-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145704923-1');
+</script>
+<!-- -->
+
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/init.js"></script>
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<style>
-		#iframe {
-			position: absolute;
-			float: left;
-			clear: both;
-			width: 100%;
-			height: 150px;
-			z-index: -1;
-		}
-
-		body,
-		h1,
-		h2,
-		h3,
-		h4,
-		h5 {
-			font-family: "Raleway", sans-serif
-		}
-
-		#upanimation {
-			-webkit-animation: upmove 8s 2s forwards;
-			/* Safari 4.0 - 8.0 */
-		}
-
-		@keyframes upmove {
-			0% {}
-
-			100% {
-				opacity: 0;
-				display: none;
-				z-index: -1;
-			}
-		}
-	</style>
-	<script>
-		window.onbeforeunload = function() {
-			window.scrollTo(0, 0);
-		}
-
-		function viewOnGit(url, elementID) {
-			var btn = document.createElement("SPAN"); // Create a <button> element
-			btn.innerHTML = '<a href="' + url + '"><img style="height:40px;float:right;" src="images/gitcat.png" /></a>'; // Insert text
-			document.getElementById(elementID).appendChild(btn);
-		}
-	</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body class="w3-light-grey">
 
-
-
-	<!-- w3-content defines a container for fixed size centered content,
-and is wrapped around the whole page content, except for the footer in this example -->
 	<div class="w3-content" style="max-width:1400px">
 
 		<!-- Header -->
@@ -81,9 +72,9 @@ and is wrapped around the whole page content, except for the footer in this exam
 			<div class="w3-col l8 s12">
 				<!-- Blog entry -->
 				<div class="w3-card-4 w3-margin w3-white">
-					<img src="images/left_head.jpg" alt="Luke Price" style="width:100%;height:100%;">
+					<img src="images/left_head.jpg" alt="Luke Price" class="card_image">
 					<div class="w3-container">
-						<h3><b><span style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">luke@pricel.uk:~$ echo "Hello World."</b></h3>
+						<h3><b><span class="panel_title">luke@pricel.uk:~$ echo "Hello World."</span></b></h3>
 						<h5><span class="w3-opacity">April 12, 2019</span></h5>
 					</div>
 
@@ -98,15 +89,16 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 				<!-- Blog entry -->
 				<div class="w3-card-4 w3-margin w3-white">
-					<img src="images/EncryptionHandler.jpg" alt="RSA" style="width:100%;">
+					<img src="images/EncryptionHandler.jpg" alt="RSA" class="card_image">
 					<div class="w3-container">
-						<h3><b><span id="RSA" style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">RSA Cryptography<script>
+						<h3><b><span id="RSA" class="panel_title">RSA Cryptography<script>
 										viewOnGit("https://github.com/priceluke/RSAChat", "RSA");
-									</script></b></h3>
+									</script></span></b></h3>
 						<h5><span class="w3-opacity">April 15, 2019</span></h5>
 					</div>
 					<div class="w3-container">
-						As part of a Software Engineering Assignment, this Java project combined Rivest–Shamir–Adleman Cryptography with a TCP chat program to provide Users with secure communication. The RSA Class is available for download as acts as a good wrapper
+						As part of a Software Engineering Assignment, this Java project combined Rivest–Shamir–Adleman Cryptography with a TCP chat program to provide Users with secure communication. The RSA Class is available for download as acts as a good
+						wrapper
 						for the encryption and decryption processes but the full project can be found on my GitHub page. <div class="w3-row">
 							<br>
 						</div>
@@ -116,9 +108,9 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 				<!-- Blog entry -->
 				<div class="w3-card-4 w3-margin w3-white">
-					<img src="images/hardsploit.jpg" alt="Luke Price" style="width:100%;">
+					<img src="images/hardsploit.jpg" alt="Luke Price" class="card_image">
 					<div class="w3-container">
-						<h3><b><span style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">Hardware Hacking Course</b></h3>
+						<h3><b><span class="panel_title">Hardware Hacking Course</span></b></h3>
 						<h5><span class="w3-opacity">August 10, 2019</span></h5>
 					</div>
 
@@ -135,16 +127,18 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 				<!-- Blog entry -->
 				<div class="w3-card-4 w3-margin w3-white">
-					<img src="images/euler.jpg" alt="Euler" style="width:100%;">
+					<img src="images/euler.jpg" alt="Euler" class="card_image">
 					<div class="w3-container">
-						<h3><b><span id="Euler" style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">Project Euler<script>
+						<h3><b><span id="Euler" class="panel_title">Project Euler<script>
 										viewOnGit("https://github.com/priceluke/project-euler/", "Euler");
-									</script></b></h3>
+									</script></span></b></h3>
 						<h5><span class="w3-opacity">April 15, 2019</span></h5>
 					</div>
 					<div class="w3-container">
-						Project Euler is a collection of computational problems that can be solved using various mathematical approaches in under a minute on an average CPU. There are nearly a million users on the site and over 600 problems to solve with new ones
-						being added every few weeks<sup> [<a href="https://projecteuler.net/statistics">1</a>]</sup>. These challenges have appealed to me from a problem-solving standpoint so from time to time I will complete a task. The solutions are available on my
+						Project Euler is a collection of computational problems that can be solved using various mathematical approaches in under a minute on an average CPU. There are nearly a million users on the site and over 600 problems to solve with new
+						ones
+						being added every few weeks<sup> [<a href="https://projecteuler.net/statistics">1</a>]</sup>. These challenges have appealed to me from a problem-solving standpoint so from time to time I will complete a task. The solutions are available
+						on my
 						GitHub (<a href="https://projecteuler.net/about#forum">don't tell)</a> to showcase how I work through problems.<div class="w3-row">
 							<br>
 						</div>
@@ -154,9 +148,9 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 				<!-- Blog entry -->
 				<div class="w3-card-4 w3-margin w3-white">
-					<img src="images/cyber.png" alt="GCHQ" style="width:100%;">
+					<img src="images/cyber.png" alt="GCHQ" class="card_image">
 					<div class="w3-container">
-						<h3><b><span style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">Cyber Security Summer School</b></h3>
+						<h3><b><span class="panel_title">Cyber Security Summer School</span></b></h3>
 						<h5><span class="w3-opacity">July 8th, 2019</span></h5>
 					</div>
 					<div class="w3-container">
@@ -171,10 +165,10 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 				<!-- Blog entry -->
 				<div class="w3-card-4 w3-margin w3-white">
-					<img src="images/securecoding.jpg" alt="RSA" style="width:100%;">
+					<img src="images/securecoding.jpg" alt="RSA" class="card_image">
 					<div class="w3-container">
 
-						<h3><b><span id="RSA" style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">Secure Coding</b></h3>
+						<h3><b><span id="RSA" class="panel_title">Secure Coding</span></b></h3>
 						<h5><span class="w3-opacity">July 20th, 2019</span></h5>
 					</div>
 					<div class="w3-container">
@@ -187,32 +181,38 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 				<!-- Blog entry -->
 				<div class="w3-card-4 w3-margin w3-white">
-					<img src="images/WebSAIF.jpg" alt="RSA" style="width:100%;">
+					<img src="images/WebSAIF.jpg" alt="RSA" class="card_image">
 					<div class="w3-container">
 
-						<h3><b><span id="RSA" style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">WebSAIF - Explicit Content Web Filter</b></h3>
+						<h3><b><span id="RSA" class="panel_title">WebSAIF - Explicit Content Web Filter</span></b></h3>
 						<h5><span class="w3-opacity">August 4th, 2019</span></h5>
 					</div>
 					<div class="w3-container">
-							<p>Over the Summer I created a Content Filter, aimed at parents, to block explicit content from appearing on web pages. We have all seen various quesitonable adverts appear so to keep this out of the view of children WebSAIF was created. </p><p>It is essencially a customisable Chrome extension that calls a Keras/Flask API that decides if the image is apropriate. The extension will then remove the image from the site if it deems it to be inapropriate. This was my first AI project and progressing the system from a binary clasification, either inapropriate or not, to a class based Convolutional neural network was a big challenge but allowed for far more customisation over what was filtered out on the client side. </p><p>I've kept the source code for this private for now but it may be avalible for download soon!</p>
+						<p>Over the Summer I created a Content Filter, aimed at parents, to block explicit content from appearing on web pages. We have all seen various quesitonable adverts appear so to keep this out of the view of children WebSAIF was created.
+						</p>
+						<p>It is essencially a customisable Chrome extension that calls a Keras/Flask API that decides if the image is apropriate. The extension will then remove the image from the site if it deems it to be inapropriate. This was my first AI
+							project and progressing the system from a binary clasification, either inapropriate or not, to a class based Convolutional neural network was a big challenge but allowed for far more customisation over what was filtered out on the
+							client side. </p>
+						<p>I've kept the source code for this private for now but it may be avalible for download soon!</p>
 						<br>
-						</div>
 					</div>
+				</div>
 
-							<hr>
+				<hr>
 
 				<!-- Blog entry -->
 				<div class="w3-card-4 w3-margin w3-white">
-					<img src="images/heplus.png" alt="HE+" style="width:100%;">
+					<img src="images/heplus.png" alt="HE+" class="card_image">
 					<div class="w3-container">
-						<h3><b><span id="HEP" style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">HE+<script>
+						<h3><b><span id="HEP" class="panel_title">HE+<script>
 										//	viewOnGit("https://github.com/priceluke/Home-Made-Automation", "HMA");
-									</script></b></h3>
+									</script></span></b></h3>
 						<h5><span class="w3-opacity">April 16, 2019</span></h5>
 					</div>
 					<div class="w3-container">
 						As part of the University of Cambridge's gifted and talented scheme, I attended a course aimed to encourage College students to explore advanced topics that are beyond the scope of A Levels. This 8-week course included extension courses,
-						trips, student workshops and seminars.As part of the University of Cambridge's gifted and talented scheme, I attended a course aimed to encourage College students to explore advanced topics that are beyond of the scope of A Levels. This 8-week
+						trips, student workshops and seminars.As part of the University of Cambridge's gifted and talented scheme, I attended a course aimed to encourage College students to explore advanced topics that are beyond of the scope of A Levels. This
+						8-week
 						course included extension courses, trips, student workshops and seminars.<div class="w3-row">
 							<br>
 						</div>
@@ -222,15 +222,34 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 				<!-- Blog entry -->
 				<div class="w3-card-4 w3-margin w3-white">
-					<img src="images/hma.png" alt="Nature" style="width:100%;">
+					<img src="images/hma.png" alt="Nature" class="card_image">
 					<div class="w3-container">
-						<h3><b><span id="HMA" style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">Home[Made] Automation<script>
+						<h3><b><span id="HMA" class="panel_title">Home[Made] Automation<script>
 										viewOnGit("https://github.com/priceluke/Home-Made-Automation", "HMA");
-									</script></b></h3>
+									</script></span></b></h3>
 						<h5><span class="w3-opacity">April 16, 2019</span></h5>
 					</div>
 					<div class="w3-container">
-						During College, as part of my Extended Project, I created a smart lightbulb using a WAMP server, a raspberry pi and a prediction model. The web interface was written in PHP, Raspberry Pi & channel relay in Python and Prediction Model in C#.
+						During College, as part of my Extended Project, I created a smart lightbulb using a WAMP server, a raspberry pi and a prediction model. The web interface was written in PHP, Raspberry Pi & channel relay in Python and Prediction Model in
+						C#.
+						<div class="w3-row">
+							<br>
+						</div>
+					</div>
+				</div>
+				<hr>
+
+				<!-- Blog entries -->
+				<div class="w3-card-4 w3-margin w3-white">
+					<img src="images/WinInt.jpg" alt="SchoolFess" class="card_image">
+					<div class="w3-container">
+						<h3><b><span class="panel_title">Windows Internals</span></span></b></h3>
+						<h5><span class="w3-opacity">August 14, 2019</span></h5>
+					</div>
+
+					<div class="w3-container">
+						Over the past 3 days I attended a Windows Internals course lead by Industry expert Alex Ionescu. The course covered the intricacies of operating system and explained common attack surfaces. The course covered everything from Driver
+						vulnerabilities, Windows memory management, the details of the kernel and process scheduling.
 						<div class="w3-row">
 							<br>
 						</div>
@@ -240,9 +259,9 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 				<!-- Blog entry -->
 				<div class="w3-card-4 w3-margin w3-white">
-					<img src="images/confess.png" alt="SchoolFess" style="width:100%;">
+					<img src="images/confess.png" class="card_image" alt="SchoolFess">
 					<div class="w3-container">
-						<h3><b><span style="margin-top:5px;  font: 1.3rem Inconsolata, monospace;">SchoolFess</b></h3>
+						<h3><b><span class="panel_title">SchoolFess</span></b></h3>
 						<h5><span class="w3-opacity">April 15, 2019</span></h5>
 					</div>
 					<div class="w3-container">
@@ -260,7 +279,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 			<div class="w3-col l4">
 				<!-- About Card -->
 				<div class="w3-card w3-margin w3-margin-top">
-					<img src="images/right_head.jpg" style="width:100%">
+					<img src="images/right_head.jpg" id="right_head" class="card_image">
 					<div class="w3-container w3-white">
 						<h4><b>About</b></h4>
 						<p>This site primarily serves as a place to document projects I have undertaken. I have also included an abridged employment & academic history.</p>
@@ -366,14 +385,15 @@ and is wrapped around the whole page content, except for the footer in this exam
 						</li>
 						<li class="w3-padding-16 w3-hide-medium w3-hide-small">
 							<img src="images/a.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-							<span class="w3-large">English Lang.</span>
+							<span class="w3-large">English<!-- Lang.--></span>
 							<br>
 						</li>
+						<!--
 						<li class="w3-padding-16 w3-hide-medium w3-hide-small">
 							<img src="images/b.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
 							<span class="w3-large">English Lit.</span>
 							<br>
-						</li>
+						</li>-->
 					</ul>
 				</div>
 				<hr>
@@ -460,10 +480,10 @@ and is wrapped around the whole page content, except for the footer in this exam
 							<br>
 						</li>
 						<!-- Coming Soon... <li class="w3-padding-16">
-							<img src="images/haskell.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
-							<span class="w3-large">Haskell</span>
-							<br>
-						</li>-->
+								<img src="images/haskell.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
+								<span class="w3-large">Haskell</span>
+								<br>
+							</li>-->
 						<li class="w3-padding-16">
 							<img src="images/python.png" alt="Image" class="w3-left w3-margin-right" style="width:45px">
 							<span class="w3-large">Python</span>
