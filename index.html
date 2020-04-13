@@ -2,24 +2,88 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
+    <title>Deadlines@Surrey</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
     canvas {
-      border: 1px solid #d3d3d3;
-      background-color: #f1f1f1;
+        border: 1px solid #d3d3d3;
+        background-color: #f1f1f1;
     }
-  </style>
+</style>
 </head>
 
 <body>
-  <p>The Internet Archive can exclude websites from the Wayback Machine (web.archive.org), but we first respectfully request that you help us verify that you are the site owner or content author of (pricel.uk)by doing any one of the following:
+<div class="container pt-4">
+    <div class="card text-white bg-primary mb-3 d-inline-block" style="max-width: 20rem;">
+        <div class="card-header">SOFTWARE ENGINEERING PROJECT (COM2027)</div>
+        <div class="card-body">
+            <h4 class="card-title"><p id="COM2027"></p></h4>
+        </div>
+    </div>
+    <div class="card text-white bg-success mb-3 d-inline-block" style="max-width: 20rem;">
+        <div class="card-header">ARTIFICIAL INTELLIGENCE (COM2028)</div>
+        <div class="card-body">
+            <h4 class="card-title"><p id="COM2028"></p></h4>
+        </div>
+    </div>
+    <div class="card text-white bg-info mb-3 d-inline-block" style="max-width: 20rem;">
+        <div class="card-header">
+            COMPUTER NETWORKING (COM2022)
+        </div>
+        <div class="card-body">
+            <h4 class="card-title"><p id="COM2022"></p></h4>
+        </div>
+    </div>
+    <div class="card text-white bg-warning mb-3 d-inline-block" style="max-width: 20rem;">
+        <div class="card-header">PARALLEL COMPUTING (COM2039)</div>
+        <div class="card-body">
+            <h4 class="card-title"><p id="COM2039"></p></h4>
+        </div>
+    </div>
+</div>
+<script>
+    function calculateRemaining(id, date) {
+        // Set the date we're counting down to
+        var countDownDate = new Date(date).getTime();
 
-(Note: Some of these options can be in reference to the content located in prior Wayback Machine captures, and/or documentation you may have related to the specified time period.)
+        // Update the count down every 1 second
+        var x = setInterval(function () {
 
-* post your request on the current version of the site (and send us a link).
-* send your request from the main email contact listed on the site and show us where it can be located (if one is present).
-* send a request from the registrant's email (if publicly viewable on a WHOIS lookup you can link us to) or webmaster’s email listed on the site.
-* point us to where your personal information (name, point of contact, image of self) appears on the site in a way that identifies you as owner of the site or author of the content you wish to have excluded - in this instance, we ask to verify your identity via a scan of a valid photo ID (sensitive information such as birth date, address, or phone number can be redacted).
-* forward to us communication from a hosting company or registrar addressed to you as owner of the domain.</p>
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById(id).innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById(id).innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    }
+
+    calculateRemaining("COM2039", "May 4, 2020 16:00:00");
+    calculateRemaining("COM2028", "May 11, 2020 16:00:00");
+    calculateRemaining("COM2022", "May 18, 2020 16:00:00");
+    calculateRemaining("COM2027", "Jun 2, 2020 16:00:00");
+</script>
 </body>
 </html>
